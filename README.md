@@ -30,3 +30,30 @@ A professional, secure, and scalable **.NET 8 Web API** for managing student rec
 ├── Data            # ApplicationDbContext & Migrations
 ├── Middleware      # Exception Handling Middleware
 └── StudentMgmt.db  # Local SQLite Database File
+---
+
+### Getting Started
+
+#### 1. Prerequisites
+* [.NET 8.0 SDK](https://dotnet.microsoft.com/download/dotnet/8.0)
+* VS Code or Visual Studio 2022
+
+#### 2. Installation
+```bash
+# Clone the repository
+git clone [https://github.com/AbhikKhodiyar/StudentManagementSystem.git](https://github.com/AbhikKhodiyar/StudentManagementSystem.git)
+
+# Navigate to the project directory
+cd StudentManagementSystem
+
+# Restore NuGet packages
+dotnet restore
+
+#Running the API
+dotnet run
+The API will be available at http://localhost:5138
+
+#Testing with Swagger
+Navigate to http://localhost:5138/swagger to access the interactive UI.
+Use the POST /api/Auth/login endpoint to generate a token.
+Click the Authorize button at the top and paste your token to unlock protected endpoints.
